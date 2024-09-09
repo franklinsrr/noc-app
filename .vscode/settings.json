@@ -3,7 +3,11 @@
         "config",
         "tsconfig.json",
         "dependencies",
-        "vscode/settings.json"
+        "vscode/settings.json",
+        "package.json",
+        "presentation",
+        "domain",
+        "server"
     ],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
