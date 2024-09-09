@@ -9,7 +9,10 @@
         "domain",
         "server",
         "launch.json",
-        "log.entity.ts"
+        "log.entity.ts",
+        "datasource",
+        "repository",
+        "file-system.datasource"
     ],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
