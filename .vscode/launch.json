@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Dev Script",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "dev"],
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run Start Script",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "start"],
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug App (Attach)",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "restart": true,
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
