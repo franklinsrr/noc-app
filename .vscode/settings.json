@@ -1,5 +1,5 @@
 {
-  "conventionalCommits.scopes": ["config"],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "conventionalCommits.scopes": ["config", "tsconfig.json", "dependencies"],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
