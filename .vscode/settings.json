@@ -7,7 +7,9 @@
         "package.json",
         "presentation",
         "domain",
-        "server"
+        "server",
+        "launch.json",
+        "log.entity.ts"
     ],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
