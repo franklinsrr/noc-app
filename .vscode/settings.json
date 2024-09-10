@@ -12,7 +12,10 @@
         "log.entity.ts",
         "datasource",
         "repository",
-        "file-system.datasource"
+        "file-system.datasource",
+        "env",
+        "check-service",
+        "doc"
     ],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
