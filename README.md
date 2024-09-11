@@ -27,6 +27,22 @@ This is a monitoring application developed with Node.js and TypeScript. The app 
     MAILER_EMAIL=
     MAILER_SECRET_KEY=
     PRODUCTION=
+
+    MONGO_URL=
+    MONGO_DB_NAME=
+    MONGO_USER=
+    MONGO_PASS=
+
+    POSTGRES_URL=
+    POSTGRES_DB=
+    POSTGRES_USER=
+    POSTGRES_PASSWORD=
+
+    ```
+
+4. Setup databases
+    ```bash
+    docker-compose up -d
     ```
 
 ## Scripts
