@@ -15,7 +15,10 @@
         "file-system.datasource",
         "env",
         "check-service",
-        "doc"
+        "doc",
+        "envs.plugins.ts",
+        "use-case",
+        "service"
     ],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
