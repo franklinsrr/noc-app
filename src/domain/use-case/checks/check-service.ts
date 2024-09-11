@@ -8,6 +8,8 @@ interface CheckServiceUseCase {
 type SuccessCallback = (() => void) | undefined
 type ErrorCallback = ((error: string) => void) | undefined
 
+const origin = 'check-service.ts'
+
 export class CheckService implements CheckServiceUseCase {
     constructor(
         private readonly logRepository: LogRepository,
@@ -22,12 +24,22 @@ export class CheckService implements CheckServiceUseCase {
             if (!req.ok) throw new Error(`Error on check service ${url}`)
 
             const logString = `Service ${url} working `
-            const log = new LogEntity(logString, LogSeverityLevel.low)
+
+            const log = new LogEntity({
+                message: logString,
+                level: LogSeverityLevel.low,
+                origin,
+            })
+
             this.logRepository.saveLog(log)
             this.successCallback && this.successCallback()
         } catch (error) {
             const errorMessage = `${url} is not ok ${error}`
-            const log = new LogEntity(errorMessage, LogSeverityLevel.hight)
+            const log = new LogEntity({
+                message: errorMessage,
+                level: LogSeverityLevel.hight,
+                origin,
+            })
             this.logRepository.saveLog(log)
             this.errorCallback && this.errorCallback(errorMessage)
             return false
